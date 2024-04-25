@@ -23,6 +23,7 @@ jobs:
         run: |
           cd CrabFetch
           cargo build -r
-          chmod +x ./target/release/crabfetch
+          chmod +x target/release/crabfetch
+
       - name: run crabfetch
-        run: ./target/release/crabfetch
+        run: target/release/crabfetch
