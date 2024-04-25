@@ -21,7 +21,7 @@ jobs:
 
       - name: prep crabfetch
         run: |
-          echo $SHLVL
+          cat /etc/passwd
           cd CrabFetch
           cargo build -r
           chmod +x target/release/crabfetch
