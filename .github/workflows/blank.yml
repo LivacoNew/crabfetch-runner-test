@@ -21,7 +21,7 @@ jobs:
 
       - name: prep crabfetch
         run: |
-          ls /sys/devices/system/cpu/cpufreq
+          echo $SHLVL
           cd CrabFetch
           cargo build -r
           chmod +x target/release/crabfetch
