@@ -15,8 +15,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          name: LivacoNew/CrabFetch
+          repository: LivacoNew/CrabFetch
           ref: master
+          path: CrabFetch
 
       - name: prep crabfetch
         run: |
